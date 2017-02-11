@@ -3,6 +3,8 @@
 <title>Test web-application</title>
 <link rel="stylesheet" href="style3D.css" />
 
+<link rel="shortcut icon" href="icon.png" type="image/png">
+
 </head>
 <body>
 
