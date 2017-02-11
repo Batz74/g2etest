@@ -1,0 +1,55 @@
+﻿body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: #000000;
+  background-image: url("G2KinguinBS.png");
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  -webkit-perspective: 1200;
+  perspective: 1200;
+  -moz-transform: perspective(1200px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+div {
+  width: 22%;
+  height: 40%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+img {
+  position: absolute;
+  -webkit-animation: turn 2s infinite;
+  animation: turn 2s infinite;
+}
+
+#leftimg
+{
+width: 280px;
+float:left; /* Выравнивание по левому краю */
+/*margin: 0 0 10% 10%; /* Отступы вокруг картинки */
+}
+
+.front {
+  z-index: 2;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@-webkit-keyframes turn {
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@keyframes turn {
+  to {
+    transform: rotateY(360deg);
+  }
+}
